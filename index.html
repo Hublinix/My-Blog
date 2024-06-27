@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Blog</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+
+<header>
+    <h1>My Blog</h1>
+</header>
+
+<body>
+    <nav class="switch">
+        <label class="button">
+            <button type="checkbox" id="light"></button>
+            <span class="round switch"></span>
+        </label>
+    </nav>
+    <form>
+        <p>
+            <label for="username">Name:</label>
+            <input id="username" type="text" placeholder="Username">
+        </p>
+        <p>
+            <label for="title">Title:</label>
+            <input id="title" type="text" placeholder="Title">
+        </p>
+        <p>
+            <label for="content">Content</label>
+            <textarea id="content" placeholder="Content"></textarea>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+    <script defer src="./assets/js/logic.js" type="text/javascript"></script>
+    <script defer src="./assets/js/form.js" type="text/javascript"></script>
+</body>

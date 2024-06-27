@@ -1,0 +1,32 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark li a {
+    color: white;
+}
+
+.dark li a:hover {
+    background-color: black;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light li a {
+  color: black;  
+}
+
+.light li a:hover {
+    background-color: white;
+}
+
+.switch{
+    position: relative;
+    display: inline;
+    width: 30px;
+    height: 17px;
+}
