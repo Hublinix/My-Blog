@@ -1,15 +1,16 @@
-const lightEl = document.querySelector('#light');
-const container = document.querySelector('.switch');
+const toggleEl = document.querySelector('#toggle');
+const container = document.querySelector('.container')
 
-let mode = 'dark';
+let mode = 'light';
 
-lightEl.addEventListener('click', function () {
-    if (mode === 'dark') {
-        mode = 'light'
-        container.setAttribute('class', 'light')
-    }
-    else {
+toggleEl.addEventListener('click', function () {
+    if (mode === 'light') {
         mode = 'dark'
-        container.setAttribute('class', 'dark')
+        container.setAttribute('class','dark')
     }
-});
+
+    else {
+        mode = 'light';
+        container.setAttribute('class','light');
+    }
+})
