@@ -1,14 +1,5 @@
-.dark {
-    background-color: black;
-    color: white;
-}
-
-.dark li a {
-    color: white;
-}
-
-.dark li a:hover {
-    background-color: black;
+.button {
+    background-color: white;
 }
 
 .light {
@@ -16,17 +7,47 @@
     color: black;
 }
 
-.light li a {
-  color: black;  
-}
-
-.light li a:hover {
+.light header {
     background-color: white;
+    color: black;
 }
 
-.switch{
-    position: relative;
-    display: inline;
-    width: 30px;
-    height: 17px;
+.light main {
+    background-color: white;
+    color: black;
+}
+
+.light form p {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark header {
+    background-color: black;
+    color: white;
+}
+
+.dark main {
+    background-color: black;
+    color: white;
+}
+
+.dark form p {
+    background-color: black;
+    color: white;
+}
+
+.clicker {
+    background-color: white;
+    color: black;
+}
+
+.clicker::before {
+    background-color: black;
+    color: white;
 }
