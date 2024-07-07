@@ -12,7 +12,7 @@ function renderForm() {
 backButton.addEventListener('click',function(event) {
     event.preventDefault();
     renderForm();
-    window.location.replace("file:///C:/Users/kachi/Git%20Codes/SMU-VIRT-FSF-PT-05-2024-U-LOLC-main%20(1)/My-Blog/index.html");
+    window.location.replace("./blog.html");
 });
 
 function init () {
