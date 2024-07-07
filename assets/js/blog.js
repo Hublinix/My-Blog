@@ -2,20 +2,28 @@ const backButton = document.getElementById('back');
 
 function renderForm() {
     const lastForm = JSON.parse(localStorage.getItem('formApp'));
-    if (lastForm !== null) {
-        document.getElementById('saved-username').innerHTML = lastForm.username
-        document.getElementById('saved-title').innerHTML = lastForm.title
-        document.getElementById('saved-content').innerHTML = lastForm.content
+    const bloglist = document.getElementById("bloglist")
+    let htmlCards = ""
+    for (let i = 0; i < lastForm.length; i++) {
+        htmlCards += `
+       <section class="card">
+            <h3>Title:${lastForm[i].title}</h3>
+            <p>Content:${lastForm[i].content}</p>
+            <h6>Username: ${lastForm[i].username}</h6>
+
+       </section>
+    `
     }
+    bloglist.innerHTML=htmlCards
 }
 
-backButton.addEventListener('click',function(event) {
+backButton.addEventListener('click', function (event) {
     event.preventDefault();
     renderForm();
     window.location.replace("./blog.html");
 });
 
-function init () {
+function init() {
     renderForm();
 }
 init();
